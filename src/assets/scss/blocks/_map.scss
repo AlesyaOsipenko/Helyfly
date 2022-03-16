@@ -1,0 +1,62 @@
+.map {
+    position: relative;
+    .container {
+        @extend %container;
+        &__card {
+            position: absolute;
+            transform: translateX(-50%);
+            top: 0;
+            left: 50%;
+        }
+    }
+
+    &__screen {
+        @include media (sm) {
+            height: 510px;
+        }
+    }
+
+    &__wrapper {
+        border: 1px solid #C7C7C7;
+        padding: 52px 16px 14px 16px;
+        margin: 0 auto;
+        width: 275px;
+        margin-top: 50px;
+
+        @include media (md) {
+            display: none;
+        }
+
+        @include media (xs) {
+            width: 400px;
+            padding: 52px 80px 14px 80px;
+        }
+    }
+
+    &__photo {
+        margin-right: 10px;
+        width: 67px;
+        min-width: 67px;
+        height: 67px;
+    }
+
+    &__name {
+        @include text (16px, 500, 22px, $textColor);
+    }
+
+    &__card {
+        display: none;
+        @include media (md) {
+            position: absolute;
+            top: 20px;
+            width: 420px;
+            height: 470px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: white;
+            padding: 50px 30px;
+    }
+    }
+
+}

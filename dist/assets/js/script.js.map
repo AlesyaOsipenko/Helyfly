@@ -1,0 +1,1 @@
+{"version":3,"sources":["lib.js","main.js"],"names":[],"mappings":"AAAA;ACAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"script.js","sourcesContent":["","new Swiper('.mySwiper', {\n    navigation: {\n      nextEl: '.swiper-button-next',\n      prevEl: '.swiper-button-prev'\n    },\n\n    pagination: {\n        el: '.swiper-pagination',\n      },\n  });"]}

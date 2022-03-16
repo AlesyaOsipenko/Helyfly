@@ -1,0 +1,41 @@
+@import "./abstracts/vars";
+@import "./abstracts/mixins";
+@import "./abstracts/normalize.scss";
+@import "./components/title";
+@import "./components/text";
+@import "./layout/header";
+@import "./blocks/main-block.scss";
+@import "./blocks/info";
+@import "./blocks/photocards";
+@import "./blocks/photographer";
+@import "./blocks/timetable";
+@import "./components/rating";
+@import "./blocks/map";
+@import "./components/slider";
+@import "./components/swiper";
+@import './components/organizator';
+@import './blocks/replies';
+@import './layout/footer';
+@import './components/circle';
+@import './components/organization';
+@import './components/container';
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+}
+
+a:hover {
+    color: #FC9B09;
+}

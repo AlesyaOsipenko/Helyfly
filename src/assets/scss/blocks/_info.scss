@@ -1,0 +1,152 @@
+.info {
+    padding-top: 40px;
+    @include media(sm) {
+        padding-top: 50px;
+    }
+    @include media(md) {
+        padding-top: 70px;
+    }
+    $info: &;
+
+    .container {
+        @extend %container;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include media(md) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 110px;
+            column-gap: 40px;
+        }
+
+
+        #{$info}__title {
+            @include text (28px, 400, 34px, $textColor);
+            max-width: 195px;
+            margin: 0 auto 15px;
+            text-align: center;
+
+            @include media(sm) {
+                max-width: 285px;
+                margin-bottom: 40px;
+                @include text (40px, 500, 49px, $textColor);
+            }
+
+            @include media(md) {
+                margin: 0;
+                text-align: left;
+            }
+        }
+
+        #{$info}__img {
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        #{$info}__wrapper {
+            #{$info}__text {
+                @include text (14px, 400, 20px, $textColor);
+                margin: 25px 0 40px;
+                max-width: 290px;
+
+                @include media(xs) {
+                    @include text(18px, 400, 26px, $textColor);
+                    max-width: 480px;
+                }
+
+                @include media(sm) {
+                    margin: 30px 0 46px;
+                }
+
+                @include media(md) {
+                    margin: 18px 0 23px;
+                }
+            }
+
+            #{$info}__item {
+                @include text(14px, 500, 20px, $textColor);
+                margin-left: 40px;
+            }
+
+            #{$info}__item-time {
+                position: relative;
+                margin-bottom: 34px;
+
+                &::before {
+                    @include pseudo (block, absolute, "");
+                    background-image: url(../images/info/time.svg);
+                    @include background ();
+                    left: -40px;
+                    bottom: -5px;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            #{$info}__item-photo {
+                position: relative;
+                margin-bottom: 24px;
+
+                &::before {
+                    content: "";
+                    background-image: url(../images/info/photo.svg);
+                    @include background ();
+                    position: absolute;
+                    left: -40px;
+                    bottom: -3px;
+                    width: 35px;
+                    height: 28px;
+                }
+            }
+
+            #{$info}__item-location {
+                position: relative;
+                margin-bottom: 24px;
+
+                &::before {
+                    content: "";
+                    background-image: url(../images/info/location.svg);
+                    @include background ();
+                    position: absolute;
+                    left: -40px;
+                    bottom: -7px;
+                    width: 33px;
+                    height: 33px;
+                }
+            }
+
+            #{$info}__item-speech {
+                position: relative;
+                margin-bottom: 43px;
+
+                &::before {
+                    content: "";
+                    background-image: url(../images/info/speech-bubble.svg);
+                    @include background;
+                    position: absolute;
+                    left: -40px;
+                    top: 2px;
+                    width: 31px;
+                    height: 31px;
+                }
+            }
+
+            #{$info}__rating {
+                padding: 15px 0 15px 45px;
+                border-bottom: 0.5px solid #C7C7C7;
+                border-top: 0.5px solid #C7C7C7;
+                @include media(xs) {
+                    padding: 30px 0 30px 45px;
+                }
+
+
+                #{$info}__rating--bold {
+                    @include text (14px, 600, 21px, $textColor);
+                }
+            }
+        }
+    }
+}

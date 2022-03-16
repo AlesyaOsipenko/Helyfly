@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>gulp project</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__wrapper">
+                    <img class="header__logo logo" src="./assets/images/logo.svg" alt="">
+                    <a class="header__phone-city" href="tel:88001231212">Москва</a>
+                    <div class="header__phone">
+                        <span>Телефон:</span>
+                        <a class="header__phone-link" href="tel:88001231212">8(800)-123-12-12</a>
+
+                    </div>
+                </div>
+                <a class="header__user" href="#">
+                    <img class="header__user-img" src="./assets/images/user.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="main__inner">
+                <h1 class="main__title">Эксклюзивная <span>фотосессия</span> при полете на вертолете</h1>
+                <div class="main__price-box">
+                    <div class="main__wrapper">
+                        <span class="main__price-label">Стоимость:</span>
+                        <span class="main__price">1500₽</span>
+                    </div>
+                    <img class="main__percent" src="./assets/images/percent.svg" alt="percent" />
+                </div>
+                <button class="main__btn btn">Забронировать место</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+
+            <div class="info__inner">
+
+                <h2 class="info__title title">Фотосессия в вертолете</h2>
+
+                
+                    <img class="info__img" src="./assets/images/kiss.svg" alt="">
+                
+
+                <div class="info__wrapper">
+                    <p class="info__text">Полет на вертолете это прекрасная возможность получить новые ощущения!
+                        А наш замечательный фотограф запечатлит лучшие моменты!</p>
+
+                    <ul class="info__list">
+                        <li class="info__item info__item-time">3 часа съемки</li>
+                        <li class="info__item info__item-photo">Более 50 фотографий</li>
+                        <li class="info__item info__item-location">Москва</li>
+                        <li class="info__item info__item-speech">Готовы ответить на любые вопросы</li>
+
+                        <div class="info__rating rating">
+                            <p class="rating__reviews">Более <span class="info__rating--bold">150</span> отзывов с
+                                оценкой
+                            </p>
+
+                            <div class="rating-group">
+                                <label aria-label="1 star" class="rating__label" for="rating-1"><i
+                                        class="rating__icon rating__icon--star fa fa-star fa-xs"></i></label>
+                                <input class="rating__input" name="rating" id="rating-1" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating-2"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-2" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating-3"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-3" value="3" type="radio" checked>
+                                <label aria-label="4 stars" class="rating__label" for="rating-4"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-4" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating-5"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-5" value="5" type="radio">
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+
+            </ul>
+
+
+        </div>
+        </div>
+    </section>
+
+    <section class="photocards">
+        <div class="container">
+            <div class="photocards__wrapper">
+
+                <h2 class="photocards__title title">Фотографии пакета</h2>
+
+                <div class="photocards__inner">
+
+                    <div>
+                        <img class="photocards__inner-img" src="./assets/images/photocards/smile.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/view.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/kiss.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/girl.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/kiss.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/girl.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/view.png" alt="">
+                    </div>
+                    <div class="photocards__box">
+                        <img class="photocards__inner-img" src="./assets/images/photocards/kiss.png" alt="">
+                    </div>
+                </div>
+
+                <div class="photocards__btn">
+                    <a class="photocards__link" href="#">Показать все фото</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="photographer">
+        <div class="container">
+            <div class="photographer__grid">
+
+                <div class="photographer__inner">
+                    <div class="photographer__pic organizator">
+                        <img class="photographer__img" src="./assets/images/photoghraper/photographer.jpg" alt="">
+                    </div>
+                    <h3 class="photographer__name organizator__name">Марина Иванова</h3>
+                    <p class="photographer__prof organizator__prof">Фотограф</p>
+                    <a class="photographer__link organizator__link" href="#">Показать больше
+                        информации о фотографе</a>
+                </div>
+
+
+
+                <div class="photographer__content">
+                    <h3 class="photographer__title block-text ">Об организаторе:</h3>
+                    <p class="photographer__text photographer__text-first">Всем привет! Я фотограф Мария!
+                        И по мимо фотосъемки я так же являюсь членом группы экспертов
+                        туристической отрасли, которые хорошо разбираются в маркетинге,
+                        операциях и услугах обслуживания клиентов, специализирующихся
+                        на совместном использовании и частных турах.</p>
+                    <p class="photographer__text ">Сначала мы (я и моя команда)
+                        изучаем интересы клиентов, а затем придумываем
+                        подходящее решение, которое соответствует бюджету
+                        <br> и планам клиента. Мы никогда не зависим от <br>
+                        субпоставщиков <br> и не свяжемся…</p>
+                    <a class="photographer__content-link" href="#">Читать еще</a>
+                </div>
+
+
+                <div class="photographer__content-second">
+                    <h3 class="photographer__title-second block-text ">Что я предоставлю:</h3>
+                    <p class="photographer__text photographer__text-second">Встречу вас на машине после длительного перелёта. Качественный
+                        подбор места и локации для вашей съемки. При необходимости всегда возможно прерваться на
+                        обед/ужин. Более <span>50</span> фотографий на выходе с обработкой и замечательные впечатления
+                        о Дубае!</p>
+                    <a class="photographer__content-link photographer__link" href="#">Читать еще</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="timetable">
+        <div class="container">
+            <h2 class="timetable__title">Доступная съемка в ближайшее время</h2>
+
+            <div class="timetable__wrapper">
+
+                <p class="timetable__day"><time class="text" datetime="2021-09-14 22:00"> Пятница, <span
+                            class="block__text">14 </span>сентября</time></p>
+
+                <div class="timetable__inner timetable__inner">
+
+                    <div class="timetable__box">
+                        <p class="timetable__time text">15:00 - 18:00</p>
+                        <span class="timetable__sum block__text">850$</span>
+                        <p class="time__text text">Осталось — 1 место</p>
+                    </div>
+
+                    <button class="timetable__btn">Выбрать</button>
+
+                </div>
+
+
+                <div class="timetable__inner timetable__inner--disabled">
+                    <div class="timetable__box">
+                        <p class="timetable__time text">19:00 - 22:00</p>
+                        <span class="timetable__sum block__text">850$</span>
+                        <p class="time__text text">Осталось — 1 место</p>
+                    </div>
+
+                    <button class="timetable__btn">Выбрать</button>
+                </div>
+
+                <div class="timetable__rating rating">
+                    <p class="rating__reviews">Более <span class="info__rating--bold">150</span> отзывов с оценкой
+                    </p>
+
+                    <div class="rating-group">
+                        <label aria-label="1 star" class="rating__label" for="rating-1.1"><i
+                                class="rating__icon rating__icon--star fa fa-star fa-xs"></i></label>
+                        <input class="rating__input" name="rating" id="rating-1.1" value="1" type="radio">
+                        <label aria-label="2 stars" class="rating__label" for="rating-2.1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                        <input class="rating__input" name="rating" id="rating-2.1" value="2" type="radio">
+                        <label aria-label="3 stars" class="rating__label" for="rating-3.1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                        <input class="rating__input" name="rating" id="rating-3.1" value="3" type="radio" checked>
+                        <label aria-label="4 stars" class="rating__label" for="rating-4.1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                        <input class="rating__input" name="rating" id="rating-4.1" value="4" type="radio">
+                        <label aria-label="5 stars" class="rating__label" for="rating-5.1"><i
+                                class="rating__icon rating__icon--star fa fa-star"></i></label>
+                        <input class="rating__input" name="rating" id="rating-5.1" value="5" type="radio">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="map">
+        <iframe class="map__screen"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.263179212758!2d37.6186063159009!3d55.75393028055366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sby!4v1630958623146!5m2!1sru!2sby"
+            width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="map__wrapper">
+            <div class="mySwiper swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slider">
+                        <p class="slider__circle circle">1</p>
+                        <div class="slider__text">
+                            <p class="slider__text-one ">Где встречаемся?</p>
+                            <p class="slider__text-two">Москва</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slider">
+                        <p class="slider__circle circle">2</p>
+                        <div class="slider__text">
+                            <p class="slider__text-one">Время съемки</p>
+                            <p class="slider__text-two">3 часа</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slider">
+                        <p class="slider__circle circle">3</p>
+                        <div class="slider__text">
+                            <p class="slider__text-one">Мест осталось:</p>
+                            <p class="slider__text-two">2 места</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class=" map__photographer organizator">
+
+                <div class=" map__photo">
+                    <img class="organizator__img" src="./assets/images/photoghraper/photographer.jpg" alt="ivanova">
+                </div>
+
+
+                <div class="map__info">
+                    <p class=" map__name organizator__name">Марина Иванова</з>
+
+                        <p class="organizator__prof">Фотограф</p>
+
+                        <a class="map__link organizator__link " href="#">Показать больше
+                            информации о фотографе</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container container__card">
+            <div class="map__card card">
+                <div class="card__organization organization">
+                    <div class="organization__box">
+                        <p class=" organization__circle circle">1</p>
+                        <div class=" organization__text ">
+                            <p class=" organization__text-one ">Где встречаемся?</p>
+                            <p class=" organization__text-two ">Москва</p>
+                        </div>
+                    </div>
+
+                    <div class=" organization__box">
+                        <p class=" organization__circle circle">2</p>
+                        <div class=" organization__text text">
+                            <p class="organization__text-one">Время съемки</p>
+                            <p class=" organization__text-two">3 часа</p>
+                        </div>
+                    </div>
+
+                    <div class=" organization__box">
+                        <p class=" organization__circle circle">3</p>
+                        <div class="organization__text text">
+                            <p class=" organization__text-one">Мест осталось:</p>
+                            <p class="organization__text-two">2 места</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" map__photographer organizator">
+
+                    <div class="map__photo ">
+                        <img class="organizator__img" src="./assets/images/photoghraper/photographer.jpg" alt="ivanova">
+                    </div>
+
+
+                    <div class="map__info">
+                        <p class=" map__name organizator__name">Марина Иванова</з>
+
+                            <p class="organizator__prof">Фотограф</p>
+
+                            <a class="map__link organizator__link " href="#">Показать больше 
+                        информации</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+            
+
+    </section>
+
+
+
+
+    <section class="replies">
+        <div class="container">
+
+            <h2 class="replies__title">Отзывы</h2>
+
+            <div class="replies__card">
+
+
+                <div class="replies__inner">
+                    <div class="replies__wrapper">
+                        <div class="replies__photo">
+                            <img class="replies__pic" src="./assets/images/replies/replies-pic-1.png" alt="">
+                        </div>
+
+
+                        <div class="replies__box">
+
+                            <h3 class="replies__name">Валерия Антонова</h3>
+                            <p class="replies__subtitle">Арт-директор</p>
+
+                            <div class="replies__rating rating-group">
+                                <label aria-label="1 star" class="rating__label" for="rating-1.2"><i
+                                        class="rating__icon rating__icon--star fa fa-star fa-xs"></i></label>
+                                <input class="rating__input" name="rating" id="rating-1.2" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating-2.2"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-2.2" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating-3.3"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-3.3" value="3" type="radio"
+                                    checked>
+                                <label aria-label="4 stars" class="rating__label" for="rating-4.4"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-4.4" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating-5.5"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-5.5" value="5" type="radio">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="replies__comment">
+                        <span class="replies__text--grey">Супер! Я бы заказала съемку снова!</span>
+                    </div>
+                </div>
+
+                <p class="replies__text">Хотим выразить огромную благодарность вашей компании! Получили море ощущений,
+                    все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</p>
+
+                <time class="replies__date" datetime="2019-04-27">27 Апреля, 2019г.</time>
+
+            </div>
+
+
+            <div class="replies__card">
+
+                <div class="replies__inner">
+                    <div class="replies__wrapper">
+                        <div class="replies__photo">
+                            <img class="replies__pic" src="./assets/images/replies/replies-pic-2.png" alt="">
+                        </div>
+
+
+                        <div class="replies__box">
+
+                            <h3 class="replies__name">Виталий Петров</h3>
+                            <p class="replies__subtitle">Фотограф</p>
+
+
+                            <div class="replies__rating rating-group">
+                                <label aria-label="1 star" class="rating__label" for="rating-1.3"><i
+                                        class="rating__icon rating__icon--star fa fa-star fa-xs"></i></label>
+                                <input class="rating__input" name="rating" id="rating-1.3" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating-2.3"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-2.3" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating-3.4"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-3.4" value="3" type="radio"
+                                    checked>
+                                <label aria-label="4 stars" class="rating__label" for="rating-4.5"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-4.5" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating-5.6"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-5.6" value="5" type="radio">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="replies__comment">
+                        <span class="replies__text--grey">Супер! Я бы заказал съемку снова!</span>
+                    </div>
+                </div>
+
+                <p class="replies__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный
+                    октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. Организация полёта
+                    отличная. Спасибо!</p>
+
+                <time class="replies__date" datetime="2019-04-19">19 Апреля, 2019г.</time>
+
+            </div>
+
+
+            <div class="replies__card replies__card-three">
+
+                <div class="replies__inner">
+
+                    <div class="replies__wrapper">
+
+                        <div class="replies__photo">
+                            <img class="replies__pic" src="./assets/images/replies/replies-pic-3.png" alt="">
+                        </div>
+
+                        <div class="replies__box replies__box-three">
+
+                            <h3 class="replies__name">Джим Керри</h3>
+
+                            <div class="replies__rating rating-group">
+                                <label aria-label="1 star" class="rating__label" for="rating-1.4"><i
+                                        class="rating__icon rating__icon--star fa fa-star fa-xs"></i></label>
+                                <input class="rating__input" name="rating" id="rating-1.4" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating-2.5"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-2.5" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating-3.5"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-3.5" value="3" type="radio"
+                                    checked>
+                                <label aria-label="4 stars" class="rating__label" for="rating-4.7"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-4.7" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating-5.7"><i
+                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating" id="rating-5.7" value="5" type="radio">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="replies__comment">
+                        <span class="replies__text--grey">Супер! Я бы заказал съемку снова!</span>
+                    </div>
+                </div>
+                <p class="replies__text replies__text-three">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели
+                    время!!! Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. Сами много
+                    фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату
+                    воздухоплавателя,
+                    правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено.
+                    Оценка: пять!</p>
+
+                <time class="replies__date" datetime="2019-04-11">11 Апреля, 2019г.</time>
+
+            </div>
+
+            <a class="replies__link" href="">Показать Все (134)</a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+
+        
+
+            <div class="footer__top">
+                <div class="container">
+
+                <div class="footer__inner">
+                    <img class="footer__logo logo" src="./assets/images/logo.svg" alt="#">
+                    <div class="footer__socials">
+                        <link class="footer__icon" rel="stylesheet" href="#"><img src="./assets/images/footer/vk.png"
+                        alt=""></link>
+                    <link class="footer__icon" rel="stylesheet" href="#"><img src="./assets/images/footer/facebook.png"
+                        alt=""></link>
+                    <link class="footer__icon" rel="stylesheet" href="#"><img
+                        src="./assets/images/footer/instragram.png" alt=""></link>
+                        <span class="footer__lang footer__lang--hidden">RU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__grid">
+
+                    <div class="footer__shell">
+                        <div class="footer__pay">
+                            <link class="footer__icon-card" rel="stylesheet" href="#"><img
+                                src="./assets/images/footer/mc.png" alt=""></link>
+                            <link class="footer__icon" rel="stylesheet" href="#"><img
+                                src="./assets/images/footer/visa.png" alt=""></link>
+                        </div>
+
+                        <span class="footer__lang">RU</span>
+
+                    </div>
+
+
+                    <div class="footer__info">
+                        <p class="footer__number">Тех. поддержка: 8(800)700-00-00</p>
+                        <p class="footer__copyright">© 2018 HELYFLY. All Rights Reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://kit.fontawesome.com/6cd9b051f5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
